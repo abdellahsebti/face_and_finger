@@ -1,4 +1,4 @@
-markdown
+````markdown
 # 🎯 Face & Finger Recognition with Python
 
 This project combines **real-time face recognition** and **hand gesture detection** using a camera. It recognizes faces from a local `faces/` folder and tracks finger gestures using MediaPipe.
@@ -53,15 +53,23 @@ python main.py
 
 ## 🐳 Docker Instructions
 
-### 1. Build and Run
+### 1. Docker Version
+
+This project runs on the following Docker version:
+
+```bash
+Docker version 24.0.5 or higher recommended
+```
+
+Make sure Docker has access to your webcam (especially on Linux).
+
+### 2. Build and Run
 
 ```bash
 docker-compose up --build
 ```
 
-> Make sure Docker has access to your webcam. Works best on Linux.
-
-### 2. Stop
+### 3. Stop the Containers
 
 ```bash
 docker-compose down
@@ -86,9 +94,9 @@ pip install opencv-python face_recognition mediapipe
 
 ## 💡 Example
 
-- You add `john.jpg` in the `faces/` folder.  
+- Add `john.jpg` in the `faces/` folder.  
 - When John appears on camera, his name is shown on screen.  
-- If he raises fingers, finger count and tracking appear too.
+- If he raises fingers, the system counts and tracks them in real time.
 
 ---
 
@@ -99,4 +107,4 @@ pip install opencv-python face_recognition mediapipe
 Stay tuned. More AI and computer vision features are coming soon!
 
 ---
-
+````
