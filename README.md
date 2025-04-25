@@ -1,4 +1,4 @@
-````markdown
+markdown
 # 🎯 Face & Finger Recognition with Python
 
 This project combines **real-time face recognition** and **hand gesture detection** using a camera. It recognizes faces from a local `faces/` folder and tracks finger gestures using MediaPipe.
@@ -107,4 +107,4 @@ pip install opencv-python face_recognition mediapipe
 Stay tuned. More AI and computer vision features are coming soon!
 
 ---
-````
+
