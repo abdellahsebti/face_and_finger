@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  face-finger-recognition:
+    build: .
+    container_name: face_finger_app
+    restart: unless-stopped
+    volumes:
+      - ./faces:/app/faces  # Share faces folder with the container
+    devices:
+      - "/dev/video0:/dev/video0"  # Access webcam (for Linux)
+    environment:
+      - DISPLAY=${DISPLAY}
+    stdin_open: true
+    tty: true
